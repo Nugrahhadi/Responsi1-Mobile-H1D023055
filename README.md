@@ -9,15 +9,10 @@
 ---
 
 # Video Demo:
+https://github.com/user-attachments/assets/71e4f40e-3899-41c4-b606-13756a3e88d6
 
 
-## 📊 Alur Data
-
-### API Setup
-- **Base URL**: `https://api.football-data.org/v4/`
-- **Endpoint**: `GET /teams/{id}`
-- **Team ID**: `18` (Borussia Mönchengladbach)
-- **Header**: `X-Auth-Token: 90a829184dc64ee59e72a3f2244d90ba`
+## Alur Data
 
 ### Alur Pengambilan Data
 
@@ -37,7 +32,7 @@ Update UI dengan data dari API
 
 ---
 
-## 🏗️ Struktur Activities
+## Struktur Activities
 
 ### 1. **MainActivity**
 - Menampilkan foto stadion Borussia-Park
@@ -102,7 +97,7 @@ Update UI dengan data dari API
 
 ---
 
-## 📦 Model Data
+## Model Data
 
 ### ApiResponse
 ```kotlin
@@ -154,7 +149,7 @@ data class Player(
 
 ---
 
-## 📁 Struktur Project
+## Struktur Project
 
 ```
 app/src/main/
@@ -208,7 +203,7 @@ app/src/main/
 
 ---
 
-## 📚 Library yang Digunakan
+## Library yang Digunakan
 
 ### Networking & Data
 - **Retrofit 2.9.0** - HTTP client untuk API calls
@@ -235,109 +230,3 @@ app/src/main/
 - **AndroidX Core KTX** - Kotlin extensions
 - **AndroidX AppCompat** - Backward compatibility
 - **AndroidX Activity KTX** - Activity extensions
-
----
-
-## 🎨 Tema & Warna
-
-### Color Palette
-- **Primary Color**: `#202020` (Dark gray/black)
-- **Text Color**: `#FFFFFF` (White)
-
-### Player Position Colors
-- **Goalkeeper**: `#FFEB3B` (Yellow)
-- **Defender**: `#2196F3` (Blue)
-- **Midfielder**: `#4CAF50` (Green)
-- **Forward**: `#F44336` (Red)
-
-### UI Theme
-- Background cards menggunakan warna `#202020` (dark theme)
-- Text berwarna putih untuk kontras maksimal
-- Button menggunakan Material Design dengan corner radius 10dp
-- Bottom Sheet dengan rounded top corners (15dp)
-
----
-
-## 🔧 Konfigurasi
-
-### Build Configuration
-- **Namespace**: `com.responsi1mobileh1d023055`
-- **Compile SDK**: 36
-- **Min SDK**: 24 (Android 7.0)
-- **Target SDK**: 36
-- **JVM Target**: 11
-- **Build Features**: View Binding enabled
-
-### API Configuration
-API Token dikonfigurasi di `RetrofitClient.kt`:
-```kotlin
-private const val API_TOKEN = "90a829184dc64ee59e72a3f2244d90ba"
-```
-
----
-
-## 🚀 Cara Menjalankan Aplikasi
-
-1. **Clone repository** atau buka project di Android Studio
-2. **Pastikan API Token valid** di `RetrofitClient.kt`
-3. **Sync Gradle** (otomatis saat membuka project)
-4. **Build project**: `Build → Make Project`
-5. **Run aplikasi**: 
-   - Menggunakan emulator, atau
-   - Menggunakan device fisik (USB debugging enabled)
-
----
-
-## 📱 Fitur Aplikasi
-
-### ✅ Data dari API Real-Time
-- Informasi klub (founded, venue, address)
-- Data pelatih (nama, tanggal lahir, nationality, kontrak)
-- Data pemain (nama, posisi, tanggal lahir, nationality)
-
-### ✅ UI/UX Modern
-- Material Design 3
-- Dark theme dengan kontras tinggi
-- Smooth animations
-- Bottom Sheet untuk detail pemain
-- Progress bar saat loading
-- Error handling yang baik
-
-### ✅ Performance
-- Asynchronous data loading dengan Coroutines
-- View Binding untuk efisiensi
-- RecyclerView untuk list performance
-- Image caching (jika menggunakan Glide/Coil)
-
----
-
-## 📝 Catatan Pengembangan
-
-### Perubahan dari Design Awal
-1. **Tidak menggunakan TabLayout** untuk pemain - diganti dengan single RecyclerView yang di-sort
-2. **Bottom Sheet Dialog** menggantikan AlertDialog biasa untuk tampilan lebih modern
-3. **Tema dark** (#202020) untuk semua card content
-4. **Semua data dari API** - tidak ada hardcoded data (kecuali foto dan sejarah klub)
-
-### Error Handling
-- Progress bar saat loading data
-- Error message jika API gagal
-- Fallback "N/A" untuk data yang tidak tersedia
-
----
-
-## 👨‍💻 Developer
-
-**NIM**: H1D023055  
-**Klub**: Borussia Mönchengladbach (Team ID: 18)  
-**API**: [football-data.org](https://api.football-data.org/)
-
----
-
-## 📄 License
-
-Project ini dibuat untuk keperluan akademik - Responsi 1 Mobile Programming.
-
----
-
-**Made with ❤️ using Kotlin & Android Studio**
